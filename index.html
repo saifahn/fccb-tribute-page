@@ -1,0 +1,84 @@
+<!--
+  1. My tribute page should have an element with corresponding id="main", which contains all other elements. ‣
+  2. I should see an element with corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug"). ‣
+  3. I should see a <div> element with corresponding id="img-div". ‣
+  4. Within the "img-div" element, I should see an <img> element with a corresponding id="image". ‣
+  5. Within the "img-div" element, I should see an element with a corresponding id="img-caption" that contains textual content describing the image shown in "img-div". ‣
+  X 6 . I should see an element with a corresponding id="tribute-info", which contains textual content describing the subject of the tribute page. ‣
+  7. I should see an <a> element with a corresponding id="tribute-link", which links to an outside site that contains additional information about the subject of the tribute page. HINT: You must give your element an attribute of target and set it to "_blank" in order for your link to open in a new tab (i.e. target="_blank"). ‣
+  
+  #Layout
+  X 1. The <img> element should responsively resize, relative to the width of its parent element, without exceeding its original size. ‣
+  X 2. The <img> element should be centered within its parent element.
+-->
+
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro" rel="stylesheet">
+  <title>【=◈︿◈=】Porter Robinson【=◈︿◈=】</title>
+</head>
+<body id="main">
+  <div class="container center" id="top-banner">
+    <div class="translucent-back">
+      <h1 id="title" class="top-header">【=◈︿◈=】</h1>
+      <h2 class="top-header">Porter Robinson</h2>
+      <h3 class="top-header">DJ, Producer</h3>
+      <a href="https://twitter.com/porterrobinson" target="_blank"><img class="snsicon" src="assets/img/twitter.png"/></a>
+      <a href="https://www.facebook.com/porterrobinsonmusic/" target="_blank"><img class="snsicon" src="assets/img/facebook.png"/></a>
+      <a href="http://porterrobinson.com" id="tribute-link" target="_blank"><img class="snsicon" src="assets/img/web.png"/></a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-6" id="img-div">
+          <img id="image" src="assets/img/porter02-edit.png" class="center">
+          <figcaption class="center" id="img-caption">Porter Robinson</figcaption>
+      </div>
+      <div class="col-6" id="tribute-info">
+        <p>Porter Weston Robinson is an American DJ, record producer and musicion from North Carolina. He is currently ranked number 90 on DJ Mag's Top 100 DJs list for 2016.</p>
+        <br>
+        <p>He began producing at age 12, and in 2011 released his EP Spitfire under Skrillex's record label OWLSA. Since then, he has released a number of tracks that have taken the #1 overall chart position on Beatport, as well as releasing an album with his own personal style.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container row">
+    <div class="col-4">
+      <img class="album-art" alt="Worlds art" src="assets/img/worlds_albumart.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Language art" src="assets/img/language_art.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Easy art" src="assets/img/easy_albumart.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Spitfire art" src="assets/img/spitfire_albumart.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Sea of Voices" src="assets/img/seaofvoices_art.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Shelter art" src="assets/img/shelter_art.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Sad Machine" src="assets/img/sadmachine_art.jpg"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Flicker" src="assets/img/flicker_art.png"/>
+    </div>
+    <div class="col-4">
+      <img class="album-art" alt="Lionhearted art" src="assets/img/lionhearted_art.jpg"/>
+    </div>
+    <div class="blockquote">
+      <p class="quote">I could never find the right way to tell you;</p>
+      <p class="quote">Have you noticed I've been gone?</p>
+    </div>
+  </div>
+  <div class="container row">
+    <p class="caption">Shelter (2016)</p>
+    <p class="footer center"><a href="https://en.wikipedia.org/wiki/Porter_Robinson">More</a> about Porter Robinson</p>
+  </div>
+</body>
